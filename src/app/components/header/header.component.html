@@ -1,0 +1,14 @@
+    <div fxFlex="row" fxLayoutAlign="left center" fxLayoutGap="10px" class="header">
+    <button class="menu" mat-icon-button (click)="sidenav.toggle();">
+<!--  fxShow fxHide.gt-xs -->
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+      
+    </button>
+    <span class="spacer"></span><span class="spacer"></span><span class="spacer"></span>
+    <div class="title">Rohit Rajbanshi </div>
+    <div class="subtitle">[ Full-stack Developer ]</div>
+    <span class="spacer"></span>
+</div>
+
+ 

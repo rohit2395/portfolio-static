@@ -1,1 +1,17 @@
-<h1>Main working</h1>
+<div>
+  <app-header [sidenav]="leftSidenav"></app-header>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav style="background-color: transparent;" #leftSidenav mode="side" opened [fixedInViewport]="true" >
+      <app-side-menu></app-side-menu>
+    </mat-sidenav>
+    <mat-sidenav-content >
+      <div class="main_content">
+        <div style="padding: 20px">
+          Your content
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>

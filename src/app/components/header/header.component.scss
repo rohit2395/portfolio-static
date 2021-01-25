@@ -1,0 +1,31 @@
+.title{
+    font-family: 'BebasNeue-Bold', 'arial', sans-serif;
+    font-size: 100px;
+}
+
+.subtitle{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.header {
+    height: 6.45em;
+    padding: 10px 20px;
+    padding-left: 10px;
+    padding-top: 30px;
+    background-color: transparent;
+    color: #fff;
+    opacity: 1.5;
+  }
+
+  .corner{
+    border-bottom-right-radius: 10px;
+  }
+  .menu{
+      z-index: 2;
+  }
+  .spacer{
+    width: 10%;
+  }

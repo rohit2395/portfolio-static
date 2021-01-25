@@ -1,0 +1,28 @@
+// .toolbar{
+//     background-color: aqua;
+// }
+// .fill-remaining-space {
+//     /*This fills the remaining space, by using flexbox.  
+//    Every toolbar row uses a flexbox row layout. */
+//    flex: 1 1 auto;
+//  }
+
+//  .main_content {
+//     width:100%; 
+//     height: calc(100vh - 100px); 
+//     background: #efefef;
+//   }
+
+p {
+  font-family: Lato;
+}
+
+.main_content {
+  width:100%; 
+  // height: calc(100vh - 100px); 
+  // background: #efefef;
+}
+
+.sidenav-container{
+  background-color: transparent;
+}

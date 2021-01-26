@@ -9,7 +9,7 @@ export const onSideNavChange = trigger('onSideNavChange', [
   ),
   state('open',
     style({
-      'min-width': '200px'
+      'min-width': '200px',
     })
   ),
   transition('close => open', animate('250ms ease-in')),
@@ -20,15 +20,17 @@ export const onSideNavChange = trigger('onSideNavChange', [
 export const onMainContentChange = trigger('onMainContentChange', [
   state('close',
     style({
-      'margin-left': '62px'
+      'margin-left': '5%',
+      'margin-right':'5%'
     })
   ),
   state('open',
     style({
-      'margin-left': '200px'
+      'margin-left': '5%',
+      'margin-right':'5%'
     })
   ),
-  transition('close => open', animate('250ms ease-in')),
+  transition('close => open', animate('250ms ease-out')),
   transition('open => close', animate('250ms ease-in')),
 ]);
 

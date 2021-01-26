@@ -1,17 +1,10 @@
-<div>
-  <app-header [sidenav]="leftSidenav"></app-header>
-
-  <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav style="background-color: transparent;" #leftSidenav mode="side" opened [fixedInViewport]="true" >
-      <app-side-menu></app-side-menu>
-    </mat-sidenav>
-    <mat-sidenav-content >
-      <div class="main_content">
-        <div style="padding: 20px">
-          Your content
-        </div>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-
-</div>
+<app-header [sidenav]="leftSidenav"></app-header>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="side-menu" #leftSidenav mode="side" opened [fixedInViewport]="true">
+    <app-side-menu></app-side-menu>
+  </mat-sidenav>
+  <mat-sidenav-content class="main_content">
+    <router-outlet></router-outlet>
+    <!-- <app-portfolio [sidenav]="leftSidenav"></app-portfolio> -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

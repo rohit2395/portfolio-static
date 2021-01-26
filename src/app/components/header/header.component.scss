@@ -1,6 +1,9 @@
 .title{
     font-family: 'BebasNeue-Bold', 'arial', sans-serif;
     font-size: 100px;
+    word-wrap: normal;
+    color: #F9F1DF;
+    line-height: 80px;
 }
 
 .subtitle{
@@ -8,23 +11,28 @@
     font-size: 20px;
     display: flex;
     align-self: flex-end;
+    word-wrap: normal;
+    color: #F9F1DF;
 }
 
 .header {
-    height: 6.45em;
+    height: 15em;
     padding: 10px 20px;
     padding-left: 10px;
     padding-top: 30px;
     background-color: transparent;
     color: #fff;
     opacity: 1.5;
+    
+    // border-bottom: rgba(248, 247, 216, 0.274) 1px solid;
   }
 
   .corner{
     border-bottom-right-radius: 10px;
   }
   .menu{
-      z-index: 2;
+      z-index: 3;
+      position: fixed;  
   }
   .spacer{
     width: 10%;

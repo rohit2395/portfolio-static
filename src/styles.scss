@@ -1,11 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%; scroll-behavior: smooth;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
     background-image: url('assets/cool-background.png');
+    background-attachment: fixed;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #4B9898;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #C7C4B7;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
 }
 
 @font-face {
     font-family: BebasNeue-Bold;
     src: url(assets/fonts/BebasNeue-Bold.otf) format("opentype");
-  }
+}
+
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(assets/fonts/BebasNeue-Regular.otf) format("opentype");
+}

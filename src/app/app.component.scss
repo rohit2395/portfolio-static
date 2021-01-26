@@ -17,12 +17,18 @@ p {
   font-family: Lato;
 }
 
-.main_content {
-  width:100%; 
-  // height: calc(100vh - 100px); 
-  // background: #efefef;
+.sidenav-container{
+  background:transparent;
 }
 
-.sidenav-container{
-  background-color: transparent;
+.main_content {
+  // position: relative;
+  margin-left: 5%;
+  margin-right: 5%; 
+  // height: calc(100vh - 100px); 
+  background:transparent;
+}
+
+.side-menu{
+  background: transparent;
 }

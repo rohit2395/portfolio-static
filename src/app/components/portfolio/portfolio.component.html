@@ -1,0 +1,37 @@
+<div class="portfolio" [attr.id]="''">
+    <mat-card class="portfolio-card" [@onMainContentChange]="onSideNavChange ? 'open' : 'close'">
+
+        <h1>about me!</h1>
+        <div class="row">Simple card</div>
+        <div class="row">Simple card</div>
+
+    </mat-card>
+    <mat-card class="portfolio-card" [@onMainContentChange]="onSideNavChange ? 'open' : 'close'">
+
+        <app-skills></app-skills>
+        <div class="row">Simple card</div>
+        <div class="row">Simple card</div>
+
+    </mat-card>
+    <mat-card class="portfolio-card" [@onMainContentChange]=" onSideNavChange ? 'open' : 'close'">
+
+        <app-experience></app-experience>
+        <div class="row">Simple card</div>
+        <div class="row">Simple card</div>
+
+    </mat-card>
+    <mat-card class="portfolio-card" [@onMainContentChange]=" onSideNavChange ? 'open' : 'close'">
+
+        <app-projects></app-projects>
+        <div class="row">Simple card</div>
+        <div class="row">Simple card</div>
+
+    </mat-card>
+    <mat-card class="portfolio-card" [@onMainContentChange]=" onSideNavChange ? 'open' : 'close'">
+
+        <app-contact></app-contact>
+        <div class="row">Simple card</div>
+        <div class="row">Simple card</div>
+
+    </mat-card>
+</div>

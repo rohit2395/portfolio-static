@@ -1,7 +1,8 @@
 .sidenav_container {
     // min-width: 60px; 
     height: 100%;
-    background-color:rgba(248, 247, 216, 0.274)
+    background-color:rgba(248, 247, 216, 0.274);
+    overflow: hidden;
   }
   
   .rohit {
@@ -18,4 +19,22 @@
 
 .spacer-h{
     width: 5px;
+}
+
+.menu-item{
+  font-family: 'BebasNeue-Regular', 'arial', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: black;
+  transition: 400ms;
+}
+.menu-item:hover{
+  background-color: #F9F1DF;
+  padding-left: 10%;
+}
+
+.active-list-item {
+  background-color: #F9F1DF !important;
+  padding-left: 10%  !important;
 }

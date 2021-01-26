@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { animateText, onSideNavChange } from 'src/app/animations/animations';
 import { SidenavService } from 'src/app/services/sidenave.service';
 
@@ -18,20 +19,23 @@ interface Page {
 })
 export class SideMenuComponent implements OnInit {
 
-  
+  activeFragment = this.route.fragment.pipe() 
+
   public sideNavState: boolean = false;
   public linkText: boolean = false;
 
   public pages: Page[] = [
-    {name: 'Home', link:'some-link', icon: 'home'},
-    {name: 'Skills', link:'some-link', icon: 'star'},
-    {name: 'Work Experience', link:'some-link', icon: 'work'},
-    {name: 'Other Projects', link:'some-link', icon: 'build'},
-    {name: 'Contact Me', link:'some-link', icon: 'chat'},
+    {name: 'Home', link:'/home',icon: 'home'},
+    {name: 'Skills', link:'/skills', icon: 'star'},
+    {name: 'Work Experience', link:'/experience', icon: 'work'},
+    {name: 'Other Projects', link:'/projects', icon: 'build'},
+    {name: 'Contact Me', link:'/contact',icon: 'person'},
+    {name: 'Personal Blog', link:'/blogs',icon: 'article'},
+    {name: 'Give your feedback', link:'/feedback',icon: 'email'},
     
   ]
 
-  constructor(private _sidenavService: SidenavService) { }
+  constructor(private _sidenavService: SidenavService,public route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

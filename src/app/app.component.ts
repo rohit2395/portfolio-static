@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { SidenavService } from './services/sidenave.service';
 import { onMainContentChange,onSideNavChange } from './animations/animations';
 
@@ -9,6 +9,8 @@ import { onMainContentChange,onSideNavChange } from './animations/animations';
   animations: [ onMainContentChange,onSideNavChange ]
 })
 export class AppComponent {
+
+
   title = 'portfolio-static';
   public onSideNavChange: boolean;
 
@@ -18,5 +20,4 @@ export class AppComponent {
       this.onSideNavChange = res;
     })
   }
-
 }

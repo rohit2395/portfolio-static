@@ -21,14 +21,14 @@ export const onSideNavChange = trigger('onSideNavChange', [
 export const onMainContentChange = trigger('onMainContentChange', [
   state('close',
     style({
-      'margin-left': '2%',
-      'margin-right': '2%'
+      'margin-left': '5%',
+      'margin-right': '5%'
     })
   ),
   state('open',
     style({
-      'margin-left': '2%',
-      'margin-right': '2%'
+      'margin-left': '10%',
+      'margin-right': '10%'
     })
   ),
   transition('close => open', animate('250ms ease-out')),

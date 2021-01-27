@@ -22,8 +22,7 @@ export class SideMenuComponent implements OnInit {
 
   activeFragment : any;
 
-  public sideNavState: boolean = false;
-  public linkText: boolean = false;
+  public sideNavState: boolean = true;
 
   public pages: Page[] = [
     {name: 'Home', link:'/home',fragment:undefined,icon: 'home'},

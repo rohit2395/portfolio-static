@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
@@ -10,9 +10,15 @@ export class HeaderComponent implements OnInit {
 
   @Input() sidenav: MatSidenav
   
-  constructor() { }
+  constructor() {
+    setTimeout(()=>{
+      this.sidenav.toggle();
+    },1000);
+   }
+
 
   ngOnInit(): void {
   }
+
 
 }

@@ -35,7 +35,13 @@
 }
 
 .active-list-item {
-  transform: 400ms !important;
+  // transform: 400ms !important;
   background-color: #F9F1DF !important;
-  // padding-left: 10%  !important;
+  padding-left: 10%  !important;
+}
+
+.active-list-item:hover{
+  // transform: 400ms !important;
+  // background-color: #F9F1DF !important;
+  padding-left: 15%  !important;
 }

@@ -1,4 +1,4 @@
-import { trigger, state, style, transition, animate, animateChild, query } from '@angular/animations';
+import { trigger, state, style, transition, animate, query } from '@angular/animations';
 
 
 export const onSideNavChange = trigger('onSideNavChange', [
@@ -10,6 +10,7 @@ export const onSideNavChange = trigger('onSideNavChange', [
   state('open',
     style({
       'min-width': '200px',
+      // 'margin-right':'200px'
     })
   ),
   transition('close => open', animate('250ms ease-in')),
@@ -20,14 +21,14 @@ export const onSideNavChange = trigger('onSideNavChange', [
 export const onMainContentChange = trigger('onMainContentChange', [
   state('close',
     style({
-      'margin-left': '5%',
-      'margin-right':'5%'
+      'margin-left': '2%',
+      'margin-right': '2%'
     })
   ),
   state('open',
     style({
-      'margin-left': '5%',
-      'margin-right':'5%'
+      'margin-left': '2%',
+      'margin-right': '2%'
     })
   ),
   transition('close => open', animate('250ms ease-out')),
@@ -50,4 +51,26 @@ export const animateText = trigger('animateText', [
   ),
   transition('close => open', animate('350ms ease-in')),
   transition('open => close', animate('200ms ease-out')),
+]);
+
+export const fadeAnimation =
+    trigger('fadeAnimation', [
+      transition('* <=> *', [
+        // Set a default  style for enter and leave
+        query(':enter,:leave', [
+          
+          style({
+            position: 'absolute',
+            left: 0,
+            width: '100%',
+            opacity: 0,
+            transform: 'scale(0) translateY(100%)',
+          }),
+        ], {optional: true}),
+        // Animate the new page in
+        query(':enter', [
+          animate('400ms ease-in'),
+        ], {optional: true}),
+      ]),
+      
 ]);

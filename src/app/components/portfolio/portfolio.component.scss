@@ -4,17 +4,30 @@
     
 }
 
+.topborder-radius{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bottomborder-radius{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .portfolio-card{
-    background-color:rgba(248, 247, 216, 0.274);
-    padding: 5%;
-    padding-top: 3%;
-    // margin-left: 5%;
-    box-sizing: border-box;
-    border-radius: 10px;
+    padding: 4%;
+    padding-top: 5%;
+    background-color:rgba(248, 247, 216, 0.4);
+    // box-sizing: border-box;
     // border: black 1px solid;
 }
 
 .row{
     height: 400px;
     color: black;
+}
+
+.mat-divider{
+    border-width: medium;
+    border-top-color: rgba(0, 0, 0, 0.12);
 }

@@ -1,37 +1,23 @@
-<div class="portfolio" [attr.id]="''">
-    <mat-card class="portfolio-card" [@onMainContentChange]="onSideNavChange ? 'open' : 'close'">
-
-        <h1>about me!</h1>
+<div class="portfolio" [@onMainContentChange]="onSideNavChange ? 'open' : 'close'">
+    <mat-card class="portfolio-card topborder-radius bottomborder-radius">
+        <h1>About me!</h1>
         <div class="row">Simple card</div>
         <div class="row">Simple card</div>
-
-    </mat-card>
-    <mat-card class="portfolio-card" [@onMainContentChange]="onSideNavChange ? 'open' : 'close'">
-
+        <mat-divider></mat-divider>
         <app-skills></app-skills>
         <div class="row">Simple card</div>
         <div class="row">Simple card</div>
-
-    </mat-card>
-    <mat-card class="portfolio-card" [@onMainContentChange]=" onSideNavChange ? 'open' : 'close'">
-
+        <mat-divider></mat-divider>
         <app-experience></app-experience>
         <div class="row">Simple card</div>
         <div class="row">Simple card</div>
-
-    </mat-card>
-    <mat-card class="portfolio-card" [@onMainContentChange]=" onSideNavChange ? 'open' : 'close'">
-
+        <mat-divider></mat-divider>
         <app-projects></app-projects>
         <div class="row">Simple card</div>
         <div class="row">Simple card</div>
-
-    </mat-card>
-    <mat-card class="portfolio-card" [@onMainContentChange]=" onSideNavChange ? 'open' : 'close'">
-
+        <mat-divider></mat-divider>
         <app-contact></app-contact>
         <div class="row">Simple card</div>
         <div class="row">Simple card</div>
-
     </mat-card>
 </div>

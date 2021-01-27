@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import {  Component } from '@angular/core';
 import { SidenavService } from './services/sidenave.service';
-import { onMainContentChange,onSideNavChange } from './animations/animations';
-
+import { onMainContentChange,onSideNavChange, fadeAnimation} from './animations/animations';
+import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [ onMainContentChange,onSideNavChange ]
+  animations: [ onMainContentChange,onSideNavChange,fadeAnimation],
 })
 export class AppComponent {
 
@@ -20,4 +20,10 @@ export class AppComponent {
       this.onSideNavChange = res;
     })
   }
+
+  
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet.isActivated ? outlet.activatedRoute : '';
+  }
+
 }

@@ -15,15 +15,15 @@
   
       <div>
         <mat-nav-list>
-          <!-- <div> -->
-            <a  *ngFor="let page of pages" class="menu-item" mat-list-item [routerLinkActiveOptions]="{ exact: true }"
-            routerLink={{page?.link}} routerLinkActive="active-list-item">
+          <div  *ngFor="let page of pages" >
+            <a class="menu-item" mat-list-item routerLinkActive="active-list-item" [routerLinkActiveOptions]="{ exact: true }"
+            routerLink={{page?.link}} fragment={{page?.fragment}}>
               <mat-icon style="padding-right:5px;">{{page?.icon}}</mat-icon>
               <span class="spacer-h"></span><span class="spacer-h"></span><span class="spacer-h"></span>
               <span [@animateText]="'show'">{{ page?.name }} </span>
             </a>
-            <mat-divider></mat-divider>
-          <!-- </div> -->
+            <mat-divider ></mat-divider>
+          </div>
         </mat-nav-list>
       </div>
     </div>

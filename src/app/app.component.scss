@@ -1,34 +1,21 @@
-// .toolbar{
-//     background-color: aqua;
-// }
-// .fill-remaining-space {
-//     /*This fills the remaining space, by using flexbox.  
-//    Every toolbar row uses a flexbox row layout. */
-//    flex: 1 1 auto;
-//  }
 
-//  .main_content {
-//     width:100%; 
-//     height: calc(100vh - 100px); 
-//     background: #efefef;
-//   }
+  p {
+    font-family: Lato;
+  }
 
-p {
-  font-family: Lato;
-}
+  .sidenav-container{
+    background:transparent;
+  }
 
-.sidenav-container{
-  background:transparent;
-}
+  .main_content {
+    overflow: hidden;
+    margin-left: 2%;
+    margin-right: 2%; 
+    background:transparent;
+    // border: black 1px solid;
+  }
 
-.main_content {
-  // position: relative;
-  margin-left: 5%;
-  margin-right: 5%; 
-  // height: calc(100vh - 100px); 
-  background:transparent;
-}
 
-.side-menu{
-  background: transparent;
-}
+  .side-menu{
+    background: transparent;
+  }

@@ -28,9 +28,9 @@ export class SideMenuComponent implements OnInit {
     {name: 'Home', link:'/home',fragment:undefined,icon: 'home'},
     {name: 'Skills', link:'/home',fragment:'skills', icon: 'star'},
     {name: 'Work Experience', link:'/home',fragment:'experience', icon: 'work'},
-    {name: 'Other Projects', link:'/home',fragment:'projects', icon: 'build'},
+    // {name: 'Other Projects', link:'/home',fragment:'projects', icon: 'build'},
     {name: 'Contact Me', link:'/home',fragment:'contact',icon: 'person'},
-    {name: 'Personal Blog', link:'/blogs',fragment:undefined,icon: 'article'},
+    // {name: 'Personal Blog', link:'/blogs',fragment:undefined,icon: 'article'},
     {name: 'Give your feedback', link:'/feedback',fragment:undefined,icon: 'email'},
     
   ]

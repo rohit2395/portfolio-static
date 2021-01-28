@@ -1,0 +1,33 @@
+.skill{
+    font-family: 'Consolas', 'arial', sans-serif;
+    width: 30%;
+    color: black;
+}
+.my-progress-bar{
+    width: 70%;
+    font-family: 'Consolas', 'arial', sans-serif;
+    color: whitesmoke;
+    // background: transparent;
+}
+
+mat-card{
+    background-color:rgba(248, 247, 216, 0.4);;
+}
+.header{
+    
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    
+    font-family: 'Consolas', 'arial', sans-serif;
+}
+.tool{
+    // border: black 1px solid;
+    width: 100%;
+    text-align: center;
+    color: #018997;
+    font-weight: bold;
+    
+    font-family: 'Consolas', 'arial', sans-serif;
+}

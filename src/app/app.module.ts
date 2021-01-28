@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FlexLayoutModule} from "@angular/flex-layout";
+import {ProgressBarModule} from  'node_modules/angular-progress-bar'
 
 
 import { MaterialModule } from './shared/material.module';
@@ -38,7 +39,7 @@ import { BlogsComponent } from './components/blogs/blogs.component';
     AppRoutingModule,
     FlexLayoutModule,
     MaterialModule,
-
+    ProgressBarModule,
     BrowserAnimationsModule
   ],
   providers: [SidenavService],

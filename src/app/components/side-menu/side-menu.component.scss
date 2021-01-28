@@ -30,13 +30,13 @@
   transition: 400ms;
 }
 .menu-item:hover{
-  background-color: #F9F1DF;
+  background-color: rgba(255, 255, 255, 0.8);
   padding-left: 10%;
 }
 
 .active-list-item {
   // transform: 400ms !important;
-  background-color: #F9F1DF !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
   padding-left: 10%  !important;
 }
 

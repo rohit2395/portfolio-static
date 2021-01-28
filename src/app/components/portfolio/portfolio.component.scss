@@ -15,16 +15,32 @@
 }
 
 .portfolio-card{
-    padding: 4%;
-    padding-top: 5%;
+    // padding: 4%;
+    // padding-top: 2%;
     background-color:rgba(248, 247, 216, 0.4);
     // box-sizing: border-box;
     // border: black 1px solid;
 }
 
-.row{
-    height: 400px;
+h1{
+    padding-top: 2%;
+    font-family: 'Consolas', 'arial', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: bold;
     color: black;
+}
+.row{
+    // height: 400px;
+    font-size: large;
+    font-family: 'Consolas', 'arial', sans-serif;
+    font-weight: bold;
+    background-color:rgba(248, 247, 216, 0.8);
+    color: black;
+    margin-bottom: 2%;
+    padding:2%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .mat-divider{

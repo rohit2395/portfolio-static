@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {ProgressBarModule} from  'node_modules/angular-progress-bar'
 
-
 import { MaterialModule } from './shared/material.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +18,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -40,7 +40,8 @@ import { BlogsComponent } from './components/blogs/blogs.component';
     FlexLayoutModule,
     MaterialModule,
     ProgressBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [SidenavService],
   bootstrap: [AppComponent]

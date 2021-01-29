@@ -40,19 +40,17 @@
 
         <mat-divider></mat-divider>
 
-        <h1 [attr.id]="'projects'">Some of my projects</h1>
+        <!-- <h1 [attr.id]="'projects'">Some of my hobby projects</h1>
         <div class="row">
             <app-projects style="width: 100%;"></app-projects>
-        </div>
-        <div class="row">Simple card</div>
+        </div> -->
 
         <mat-divider></mat-divider>
+        <mat-divider style="height: 2%;"></mat-divider>
 
-        <h1 [attr.id]="'contact'">Reach out to me!</h1>
-        <div class="row">
-            <app-contact style="width: 100%;"></app-contact>
+        <!-- <h1 ></h1> -->
+        <div [attr.id]="'contact'" class="row">
+            <app-contact style="width: 100%;height: 100%;"></app-contact>
         </div>
-        <div class="row">Simple card</div>
-
     </mat-card>
 </div>

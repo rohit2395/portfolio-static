@@ -31,7 +31,7 @@ export class SideMenuComponent implements OnInit {
     // {name: 'Other Projects', link:'/home',fragment:'projects', icon: 'build'},
     {name: 'Contact Me', link:'/home',fragment:'contact',icon: 'person'},
     // {name: 'Personal Blog', link:'/blogs',fragment:undefined,icon: 'article'},
-    {name: 'Give your feedback', link:'/feedback',fragment:undefined,icon: 'email'},
+    // {name: 'Give your feedback', link:'/feedback',fragment:undefined,icon: 'email'},
     
   ]
 

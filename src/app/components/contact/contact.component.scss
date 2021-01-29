@@ -1,0 +1,36 @@
+.icon-grp{
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.icon{
+  height: 20px;
+  max-height: 20px;
+  font-size: 70px;
+  width: 50px;
+  vertical-align:middle;
+  text-decoration: none;
+  padding:15px;
+  transition: color 0.3s ease-in-out;
+  color: black;
+}
+
+.icon:hover{
+    color: #018997;
+}
+
+.email{
+    height: 20px;
+    max-height: 20px;
+    font-size: 20px;
+    width: 50px;
+    vertical-align:middle;
+    text-decoration: none;
+    padding:15px;
+    transition: color 0.3s ease-in-out;
+    color: black;
+  }
+
+.email:hover{
+    color: #018997;
+}
